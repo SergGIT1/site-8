@@ -1,0 +1,208 @@
+*{
+	margin: 0;padding: 0;
+}
+
+@font-face {
+  font-family: 'Angelface';
+  src: url('fonts/Angelface.eot');
+  src: url('fonts/Angelface.woff2') format('woff2'),
+       url('fonts/Angelface.woff') format('woff'),
+       url('fonts/Angelface.ttf') format('truetype'),
+       url('fonts/Angelface.svg#Angelface') format('svg'),
+       url('fonts/Angelface.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PinyonScript-Regular';
+  src: url('fonts/PinyonScript-Regular.eot');
+  src: url('fonts/PinyonScript-Regular.woff2') format('woff2'),
+       url('fonts/PinyonScript-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PinyonScript';
+  src: url('fonts/fonts/PinyonScript.woff') format('woff'),
+       url('fonts/PinyonScript.svg#PinyonScript') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('fonts/Roboto-Medium.woff') format('woff'),
+       url('fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('fonts/roboto.eot');
+  src: url('fonts/roboto.woff2') format('woff2'),
+       url('fonts/roboto.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/*НАЧАЛО ШАПКА*/
+.header{
+	background: url('../images/bcg.png');
+	background-size:cover;
+	height: 100vh;
+	position:relative;
+	color: #fff;
+}
+
+.menu{
+	margin-top: 7vh;
+}
+
+.header a{
+	padding: 7px 12px;
+	color:#fff;
+	font-size:1.4em;
+	margin: 10px;
+	font-family: 'Angelface';
+}
+
+
+.header a:hover{
+	border:1px solid #fff;
+	border-radius:7px;
+	text-decoration: none;
+}
+
+.header h1{
+	margin-top: 25vh;
+	font-family: 'Angelface';
+	font-style: italic;
+	font-size:8em;
+	text-align: center;
+}
+
+.header .social{
+	margin-top: 3vh;
+}
+
+.header .discover{
+	position:absolute;
+	bottom: 5vh;
+}
+
+.btn-group{
+	display: none;
+}
+/*КОНЕЦ ШАПКИ*/
+
+
+/*БЛОК С РАЗМЕРОМ ПОД КОНТЕНТ И СЕТКУ*/
+.content{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+h2{
+	font-family: 'PinyonScript';
+	font-style: italic;
+	font-size:5vh;
+	color:#b63e34;
+	margin-top: 6vh;
+}
+
+/*ОТСТУП ФОТО*/
+.meat{
+	margin-bottom: 7vh;
+	margin-top: 7vh;
+}
+
+.foto img{
+	max-width: 100%;
+	margin-top: 15px;
+}
+
+.mustache{
+	margin-bottom: 2vh;
+}
+
+p.grey{color:grey;}
+
+.menu_foto{
+	margin-bottom: 8vh;
+	margin-top: 10vh;
+}
+
+/*линия в акционных придложениях*/
+hr{
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+	border:2px dashed #818181;
+}
+
+
+/*кнопка SEE MORE*/
+.but{
+	padding: 10px 20px;
+	border:1px solid black;
+	border-radius:7px;
+	color:black;
+	margin-top: 7vh;
+}
+.but a{color: #000;}
+
+.header2{
+	background: url('../images/bcg2.png');
+	background-size:cover;
+	height: 70vh;
+	margin-top: 22vh;
+	color: #fff;
+}
+
+.map{
+	margin-top: 150px;
+	background: url('../images/map.png');
+	background-size:cover;
+	height: 40vh;
+	position:relative;
+}
+
+.cart{
+	margin-top:-80px;
+}
+
+.footer a{
+	color: #000;
+	padding: 4px 6px;
+	color:#000;
+	font-size:1.4em;
+	font-family: 'Angelface';
+}
+
+
+
+@media screen and (max-width:760px) {
+
+	.header h1{font-size:6em;}
+	.stock hr{display: none;}
+	.stock {text-align: center;}
+}
+
+@media screen and (max-width:500px) {
+	
+	.header h1{font-size:4em;}
+	.header .social{display: none;}
+
+	.header .menu{display: none;}
+	.btn-group{
+		display: block;
+		position:absolute;
+		top:7vh;
+		right:15vh;
+	}
+}

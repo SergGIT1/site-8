@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Angelface';
+  src: url('Angelface.eot');
+  src: url('Angelface.woff2') format('woff2'),
+       url('Angelface.woff') format('woff'),
+       url('Angelface.ttf') format('truetype'),
+       url('Angelface.svg#Angelface') format('svg'),
+       url('Angelface.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
